@@ -18,7 +18,7 @@ public class ex01_104021074 {
 			n = scn.nextInt();
 			x = x+n;
 			y++;
-		}System.out.println("總和為:"+(x+1));System.out.println("平均為:"+(float)((x+1)/(y-1)));
+		}System.out.println("總和為:"+(x+1));System.out.println("平均為:"+(float)((x+1)/(y-1f)));
 	}
 
 }

@@ -12,12 +12,20 @@ public class hw01_104021074 {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
 		int n = scn.nextInt();
-		int x = 0 ;
-		int y = 0 ;
-		int sum = 0 ;
-		for (int i =1 ; i<=n; i++){
-			
+		int y =0;
+		int [] data = new int[1000];
+		data[0]=1;
+		data[1]=1;
+			for(int i =2;i<=n;i++){
+				data[i]=data[(i-2)]+data[(i-1)];
+				//System.out.print(data[i]+"\t");
+				}
+			for(int i =0;i<=n;i++){
+				System.out.print(data[i]+"\t");
+			}
 		}
+		
+		
 	}
 
-}
+
